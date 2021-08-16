@@ -1,0 +1,11 @@
+@import "../variables";
+
+.footer {
+    background-color: $cDarkGrey;
+    color: $cWhite;
+    height: 65px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
