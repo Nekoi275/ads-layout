@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "build-css": "sass src/scss/:dist/css/",
-    "build": "npm run clean && npm run build-css && cp src/*.html dist/",
+    "build": "npm run clean && npm run build-css && cp -r src/html/* dist/",
     "watch": "npm-watch",
     "start": "http-server dist"
   },
