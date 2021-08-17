@@ -8,16 +8,29 @@
 	text-align: center;
     font-size: 14px;
     display: block;
-    padding: 11px 20px;
+    padding: 9px 20px;
     border-radius: 5px;
     cursor: pointer;
-
-	&:hover {
-		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-	}
+    width: 132px;
+    box-sizing: border-box;
 
     &--submit {
-        width: 130px;
         margin: 50px auto 35px auto;
+        &:hover {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &--upload {
+        margin: 0px auto;
+        background-color: $cLightRed;
+        color: $cRed;
+        padding: 7px;
+        border: 1px solid transparent;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        &:hover {
+            border: 1px solid $cRed;
+        }
     }
 }

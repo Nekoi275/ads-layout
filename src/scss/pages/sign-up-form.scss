@@ -2,20 +2,22 @@
 
 .sign-up {
     background-color: $cWhite;
-    border-radius: 5px;
+    border-radius: 3px;
     text-align: center;
     padding: 55px 85px 20px 85px;
     border: 1px solid $cBlack;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     form {
-        max-width: 500px;
         h3 {
             margin-top: 50px;
             margin-bottom: 30px;
         }
+
         h2 {
             margin-bottom: 50px;
         }
+
         input {
             width: 100%;
             display: block;
@@ -25,7 +27,7 @@
             padding: 7px;
             background: transparent;
             line-height: 30px;
-    
+
             &::placeholder {
                 color: $cDarkGrey;
             }
@@ -48,7 +50,23 @@
 }
 
 .file-upload {
-   border: 1px dashed $cBlack;
-   text-align: center;
-   border-radius: 5px;
+    border: 1px dashed $cBlack;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(60, 72, 88, 0.05);
+    padding: 167px 0px 166px 0px;
+
+    h3 {
+        margin: 16px 0px;
+    }
+    p {
+        font-size: 16px;
+        opacity: 0.5;
+        margin-bottom: 30px;
+    }
+    span {
+        display: block;
+        opacity: 0.5;
+        font-size: 12px;
+    }
 }
