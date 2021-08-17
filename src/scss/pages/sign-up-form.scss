@@ -1,0 +1,54 @@
+@import "../variables";
+
+.sign-up {
+    background-color: $cWhite;
+    border-radius: 5px;
+    text-align: center;
+    padding: 55px 85px 20px 85px;
+    border: 1px solid $cBlack;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    form {
+        max-width: 500px;
+        h3 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+        input {
+            width: 100%;
+            display: block;
+            border: 0px;
+            border-bottom: 2px solid $cLightGrey;
+            outline: 0px;
+            padding: 7px;
+            background: transparent;
+            line-height: 30px;
+    
+            &::placeholder {
+                color: $cDarkGrey;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $cRed;
+            }
+        }
+    }
+}
+
+.account {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.login-link {
+    color: $cRed;
+    font-size: 14px;
+}
+
+.file-upload {
+   border: 1px dashed $cBlack;
+   text-align: center;
+   border-radius: 5px;
+}
