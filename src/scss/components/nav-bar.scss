@@ -1,0 +1,10 @@
+@import "../variables";
+
+.nav-bar {
+    text-align: end;
+    li {
+        display: inline;
+        cursor: pointer;
+        margin: 0px 5px 0px 5px;
+    }
+}
