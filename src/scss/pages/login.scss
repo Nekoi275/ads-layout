@@ -1,13 +1,17 @@
 @import "../variables";
 
-.sign-up {
+.login {
     background-color: $cWhite;
     border-radius: 3px;
     text-align: center;
-    padding: 55px 85px 20px 85px;
-    border: 1px solid $cBlack;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    padding: 55px 85px 40px 85px;
+    width: 670px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
     form {
         h3 {
             margin-top: 50px;
@@ -47,26 +51,4 @@
 .login-link {
     color: $cRed;
     font-size: 14px;
-}
-
-.file-upload {
-    border: 1px dashed $cBlack;
-    text-align: center;
-    border-radius: 3px;
-    background-color: rgba(60, 72, 88, 0.05);
-    padding: 167px 70px 166px 70px;
-
-    h3 {
-        margin: 16px 0px;
-    }
-    p {
-        font-size: 16px;
-        opacity: 0.5;
-        margin-bottom: 30px;
-    }
-    span {
-        display: block;
-        opacity: 0.5;
-        font-size: 12px;
-    }
 }
