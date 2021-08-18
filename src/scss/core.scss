@@ -48,12 +48,11 @@ h3 {
 	font-weight: bold;
 }
 
-.relative {
-	position: relative;
+.full-height {
+	height: 100vh;
 }
 
-.vertical-centered {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+//spacing
+.p-b-65 {
+	padding-bottom: 65px;
 }
