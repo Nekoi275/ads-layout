@@ -5,6 +5,14 @@
     li {
         display: inline;
         cursor: pointer;
-        margin: 0px 15px 0px 15px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+        li {
+            display: block;
+        }
     }
 }

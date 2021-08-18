@@ -3,10 +3,10 @@
 .footer {
     background-color: $cDarkGrey;
     color: $cWhite;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    line-height: 25px;
-    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
