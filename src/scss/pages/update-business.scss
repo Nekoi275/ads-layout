@@ -1,0 +1,88 @@
+@import "../variables";
+
+.update-business {
+    background-color: $cWhite;
+    border-radius: 3px;
+    text-align: center;
+    padding-bottom: 30px 0px 40px 0px;
+    margin: auto;
+    
+    form {
+        padding-left: 120px;
+        padding-right: 209px;
+        h3 {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        input, textarea {
+            width: 100%;
+            display: block;
+            border: 0px;
+            border-bottom: 2px solid $cLightGrey;
+            outline: 0px;
+            padding: 7px;
+            background: transparent;
+            margin-bottom: 35px;
+
+            &::placeholder {
+                color: $cDarkGrey;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $cRed;
+            }
+        }
+
+        textarea {
+            resize: none;
+            padding-bottom: 67px;
+            &::placeholder {
+                color: $cDarkGrey;
+                font-family: $font-family-base;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .file-upload {
+        height: 330px;
+        width: 405px;
+        padding: 30px 30px 35px 30px;
+        p {
+            margin-bottom: 10px;
+            margin-top: 18px;
+        }
+        h3 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .current-logo {
+        background-color: rgba(60, 72, 88, 0.05);
+        text-align: center;
+        height: 330px;
+        width: 425px;
+        //padding: 53px 141px 63px 133px;
+        .logo-placeholder {
+            margin: auto;
+            width: 151px;
+            height: 146px;
+            background-color: rgba(60, 72, 88, 0.05);
+            color: rgba(60, 72, 88, 0.5);
+        }
+    }
+}
+
+.account {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.login-link {
+    color: $cRed;
+    font-size: 14px;
+}

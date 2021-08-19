@@ -56,6 +56,10 @@ h3 {
 	position: relative;
 }
 
+.hidden {
+	display: none;
+}
+
 //spacing
 .p-b-80 {
 	padding-bottom: 80px;
@@ -68,4 +72,13 @@ h3 {
 }
 .p-b-100 {
 	padding-bottom: 100px;
+}
+.m-t-60 {
+	margin-top: 60px;
+}
+.m-t-30 {
+	margin-top: 30px;
+}
+.m-t-10 {
+	margin-top: 10px;
 }

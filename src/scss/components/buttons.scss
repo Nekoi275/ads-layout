@@ -22,15 +22,24 @@
     }
 
     &--upload {
-        margin: 0px auto;
+        margin-left: auto;
+        margin-right: auto;
         background-color: $cLightRed;
         color: $cRed;
         padding: 7px;
         border: 1px solid transparent;
-        margin-top: 30px;
         margin-bottom: 10px;
         &:hover {
             border: 1px solid $cRed;
         }
+    }
+
+    &--back {
+        background-color: transparent;
+        color: rgba(60, 72, 88, 0.8);
+        padding: 0px;
+        width: 120px;
+        font-size: 14px;
+        padding: 25px 0px 10px 60px;
     }
 }
