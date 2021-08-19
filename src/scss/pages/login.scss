@@ -6,16 +6,11 @@
     text-align: center;
     padding: 55px 85px 40px 85px;
     width: 670px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    margin: auto;
     
     form {
         h3 {
-            margin-top: 50px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
 
         h2 {
@@ -30,7 +25,7 @@
             outline: 0px;
             padding: 7px;
             background: transparent;
-            line-height: 30px;
+            margin-bottom: 35px;
 
             &::placeholder {
                 color: $cDarkGrey;

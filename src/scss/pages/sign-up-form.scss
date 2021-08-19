@@ -6,16 +6,17 @@
     text-align: center;
     padding: 55px 85px 20px 85px;
     border: 1px solid $cBlack;
+    height: 640px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     form {
         h3 {
-            margin-top: 50px;
-            margin-bottom: 30px;
+            margin-top: 60px;
+            margin-bottom: 35px;
         }
 
         h2 {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         input {
@@ -26,7 +27,7 @@
             outline: 0px;
             padding: 7px;
             background: transparent;
-            line-height: 30px;
+            margin-bottom: 35px;
 
             &::placeholder {
                 color: $cDarkGrey;
@@ -53,8 +54,9 @@
     border: 1px dashed $cBlack;
     text-align: center;
     border-radius: 3px;
+    height: 640px;
     background-color: rgba(60, 72, 88, 0.05);
-    padding: 167px 70px 166px 70px;
+    padding: 170px 70px 170px 70px;
 
     h3 {
         margin: 16px 0px;
