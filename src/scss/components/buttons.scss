@@ -41,5 +41,37 @@
         width: 120px;
         font-size: 14px;
         padding: 25px 0px 10px 60px;
+        &::before {
+            padding-right: 5px;
+            content: "\2190";
+        }
+    }
+
+    &--remove {
+        background-color: transparent;
+        color: rgba(60, 72, 88, 0.8);
+        padding: 0px;
+        width: 67px;
+        font-size: 12px;
+        &::after {
+            padding-left: 7px;
+            content: "\2573";
+        }
+    }
+
+    &--add-availability {
+        background-color: $cLightRed;
+        color: $cRed;
+        padding: 7px;
+        width: 168px;
+        border: 1px solid transparent;
+        margin-bottom: 60px;
+        &:hover {
+            border: 1px solid $cRed;
+        }
+        &::before {
+            padding-right: 10px;
+            content: "\002B";
+        }
     }
 }

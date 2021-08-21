@@ -2,7 +2,7 @@
 
 .login {
     background-color: $cWhite;
-    border-radius: 3px;
+    border-radius: $borderRadius;
     text-align: center;
     padding: 55px 85px 40px 85px;
     width: 670px;
@@ -38,7 +38,7 @@
     }
 }
 
-.account {
+.account-text {
     font-size: 14px;
     opacity: 0.5;
 }

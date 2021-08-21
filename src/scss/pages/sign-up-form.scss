@@ -2,7 +2,7 @@
 
 .sign-up {
     background-color: $cWhite;
-    border-radius: 3px;
+    border-radius: $borderRadius;
     text-align: center;
     padding: 55px 85px 20px 85px;
     border: 1px solid $cBlack;
@@ -40,7 +40,7 @@
     }
 }
 
-.account {
+.account-text {
     font-size: 14px;
     opacity: 0.5;
 }
@@ -53,7 +53,7 @@
 .file-upload {
     border: 1px dashed $cBlack;
     text-align: center;
-    border-radius: 3px;
+    border-radius: $borderRadius;
     height: 640px;
     background-color: rgba(60, 72, 88, 0.05);
     padding: 170px 70px 170px 70px;
