@@ -74,4 +74,16 @@
             content: "\002B";
         }
     }
+
+    &--place-ad {
+        background-color: $cLightRed;
+        color: $cRed;
+        padding: 7px;
+        width: 132px;
+        display: inline;
+        border: 1px solid transparent;
+        &:hover {
+            border: 1px solid $cRed;
+        }
+    }
 }

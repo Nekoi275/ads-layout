@@ -7,6 +7,20 @@
         cursor: pointer;
         margin: 15px;
     }
+
+    &--header {
+        text-align: justify;
+        li {
+            margin: 0px;
+            margin-right: 30px;
+            &:hover {
+                color: $cRed;
+            }
+        }
+        .no-margin {
+            margin: 0px;
+        }
+    }
 }
 
 @media (max-width: 500px) {

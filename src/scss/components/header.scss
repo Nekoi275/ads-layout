@@ -1,0 +1,16 @@
+@import "../variables";
+
+.header {
+    background-color: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid $cLightGrey;
+
+    .logo {
+        color: $cRed;
+    }
+
+    .header-height {
+        height: 75px;
+    }
+}
