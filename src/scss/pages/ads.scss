@@ -10,8 +10,11 @@
     margin-top: 50px;
     margin-bottom: 70px;
     height: 40px;
+    display: table;
+    width: 100%;
     .select-category {
-        height: 100%;
+        height: 40px;
+        display: table-cell;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -29,31 +32,44 @@
         background-position-y: 18px;
     }
     input {
+        display: table-cell;
         border: none;
         outline: 0px;
-        padding-left: 40px;
+        padding-left: 50px;
         height: 40px;
         position: relative;
         width: 530px;
         box-sizing: border-box;
         background: url("../../img/search-grey.svg");
         background-repeat: no-repeat;
-        background-position-x: 10px;
+        background-position-x: 20px;
         background-position-y: 12px;
         background-color: $cWhite;
     }
-
-    .search-label-transparent {
-        background-color: transparent;
-        display: inline-block;
-    }
-
     .search-button {
-        padding: 9px 10px 10px 9px;
+        display: table-cell;
+        height: 40px;
+        width: 40px;
         background-color: $cRed;
         border: none;
+        cursor: pointer;
         box-sizing: border-box;
         border-radius: $borderRadius;
-        position: absolute;
+    }
+}
+
+.recent-business-logo {
+    width: 200px;
+    height: 113px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cWhite;
+    border-radius: $borderRadius;
+    img {
+        max-width: 100px;
+    }
+    &:hover {
+        background-color: rgba(240, 65, 65, 0.8);
     }
 }

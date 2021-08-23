@@ -5,14 +5,17 @@
   "main": "index.js",
   "watch": {
     "build": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "js,html,scss"
     }
   },
   "scripts": {
     "clean": "rm -rf dist/",
+    "copy": "cp -r src/html/index.html src/html/pages/* src/img/ dist/ && cp -r node_modules/@splidejs/splide/dist/* dist/",
     "build-css": "sass src/scss/:dist/css/",
-    "build": "npm run clean && npm run build-css && cp -r src/html/index.html src/html/pages/* src/img/ dist/",
+    "build": "npm run clean && npm run build-css && npm run copy",
     "watch": "npm-watch",
     "start": "http-server dist"
   },
@@ -23,5 +26,7 @@
     "npm-watch": "^0.11.0",
     "sass": "^1.37.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
+  }
 }

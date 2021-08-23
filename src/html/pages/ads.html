@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/splide.min.css">
 </head>
 
 <body>
@@ -35,7 +36,114 @@
                 <option value="" disabled selected>Browse by category</option>
             </select>
             <input type="text" name="search" placeholder="Search">
-            <button class="search-button"><img src="../../img/search-white.png"></button>
+            <button class="search-button"><img src="img/search-white.svg"></button>
+            <button class="button button--sorting">Sort by</button>
+        </div>
+        <h3 class="p-l-20 m-b-40 fw-medium">Latest ads</h3>
+        <div id="splide-latest-products" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="product-card">
+                            <img src="img/products/product-slide.png" width="211" height="138">
+                            <p>Newly Arrived - BLACK MARBLE</p>
+                            <span>$0.5</span>
+                            <ul>
+                                <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                                <li><img src="img/letter.svg"><span>Email_mail@mail.com</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="product-card">
+                            <img src="img/products/product-slide.png" width="211" height="138">
+                            <p>Newly Arrived - BLACK MARBLE</p>
+                            <span>$0.5</span>
+                            <ul>
+                                <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                                <li><img src="img/letter.svg"><span>Email_mail@mail.com</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="product-card">
+                            <img src="img/products/product-slide.png" width="211" height="138">
+                            <p>Newly Arrived - BLACK MARBLE</p>
+                            <span>$0.5</span>
+                            <ul>
+                                <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                                <li><img src="img/letter.svg"><span>Email_mail@mail.com</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="product-card">
+                            <img src="img/products/product-slide.png" width="211" height="138">
+                            <p>Newly Arrived - BLACK MARBLE</p>
+                            <span>$0.5</span>
+                            <ul>
+                                <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                                <li><img src="img/letter.svg"><span>Email_mail@mail.com</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="product-card">
+                            <img src="img/products/product-slide.png" width="211" height="138">
+                            <p>Newly Arrived - BLACK MARBLE</p>
+                            <span>$0.5</span>
+                            <ul>
+                                <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                                <li><img src="img/letter.svg"><span>Email_mail@mail.com</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="p-l-20 m-t-100 m-b-80 fw-medium">Recent business</h3>
+    </div>
+    <div class="recent-business-slider m-b-100">
+        <div id="splide-recent-business" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo1.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo2.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo3.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo2.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo1.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo3.png">
+                        </div>
+                     </li>
+                     <li class="splide__slide">
+                        <div class="recent-business-logo">
+                            <img src="img/business-logos/logo1.png">
+                        </div>
+                     </li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -55,6 +163,28 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide-latest-products', {
+                type: 'loop',
+                perPage: 5,
+                padding: 10,
+                arrows: false,
+                pagination: false
+            }).mount();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide-recent-business', {
+                type: 'loop',
+                perPage: 7,
+                gap: 30,
+                arrows: false,
+                pagination: false
+            }).mount();
+        });
+    </script>
 </body>
 
 </html>

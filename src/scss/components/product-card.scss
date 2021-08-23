@@ -1,0 +1,35 @@
+@import "../variables";
+
+.product-card {
+    text-align: left;
+    width: 211px;
+    height: 318px;
+    border-radius: $borderRadius;
+    background-color: $cWhite;
+    font-size: 16px;
+    line-height: 25px;
+    &:hover {
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    }
+    p {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    span {
+        padding-left: 10px;
+    }
+    ul {
+        margin-top: 10px;
+        font-size: 12px;
+        padding-left: 10px;
+        li {
+            padding-bottom: 4px;
+            img {
+                display: inline;
+                margin-right: 10px;
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

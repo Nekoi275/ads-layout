@@ -1,11 +1,11 @@
 @import "../variables";
 
 .button {
-	font-weight: $fwRegular;
-	border: none;
-	background-color: $cRed;
+    font-weight: $fwRegular;
+    border: none;
+    background-color: $cRed;
     color: $cWhite;
-	text-align: center;
+    text-align: center;
     font-size: 14px;
     display: block;
     padding: 9px 20px;
@@ -16,6 +16,7 @@
 
     &--submit {
         margin: 50px auto 35px auto;
+
         &:hover {
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
         }
@@ -29,6 +30,7 @@
         padding: 7px;
         border: 1px solid transparent;
         margin-bottom: 10px;
+
         &:hover {
             border: 1px solid $cRed;
         }
@@ -41,6 +43,7 @@
         width: 120px;
         font-size: 14px;
         padding: 25px 0px 10px 60px;
+
         &::before {
             padding-right: 5px;
             content: "\2190";
@@ -53,6 +56,7 @@
         padding: 0px;
         width: 67px;
         font-size: 12px;
+
         &::after {
             padding-left: 7px;
             content: "\2573";
@@ -66,9 +70,11 @@
         width: 168px;
         border: 1px solid transparent;
         margin-bottom: 60px;
+
         &:hover {
             border: 1px solid $cRed;
         }
+
         &::before {
             padding-right: 10px;
             content: "\002B";
@@ -82,8 +88,26 @@
         width: 132px;
         display: inline;
         border: 1px solid transparent;
+
         &:hover {
             border: 1px solid $cRed;
         }
+    }
+
+    &--sorting {
+        background: url("../../img/sorting.svg");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 12px;
+        background-color: $cWhite;
+        color: $cDarkGrey;
+        width: 170px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 40px;
+        text-align: left;
+        padding-left: 18px;
+        padding-right: 11px;
     }
 }
