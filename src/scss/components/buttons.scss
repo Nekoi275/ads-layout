@@ -158,4 +158,42 @@
             content: "\002B";
         }
     }
+
+    &--phone {
+        border: 1px solid $cRed;
+        color: $cRed;
+        padding: 7px;
+        background-color: transparent;
+        width: 168px;
+        height: 35px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+
+        &:hover {
+            background-color: $cLightRed;
+        }
+
+        &::before {
+            padding-right: 10px;
+            content: url("../img/phone.svg");
+        }
+    }
+
+    &--email {
+        border: 1px solid $cRed;
+        color: $cRed;
+        padding: 7px;
+        background-color: transparent;
+        width: 168px;
+        height: 35px;
+
+        &:hover {
+            background-color: $cLightRed;
+        }
+
+        &::before {
+            padding-right: 10px;
+            content: url("../img/letter.svg");
+        }
+    }
 }

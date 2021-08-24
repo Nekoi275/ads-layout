@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--logged-in relative">
+            <button class="button button--place-ad header-middle-left">Place an Ad</button>
+            <div class="row middle-xs end-xs header-height">
+                <button class="button button--logged-in">Log out</button>
+            </div>
+        </header>
+        <div class="breadcrumbs m-t-40 m-b-40">
+            <a href="">Search</a>
+            <img src="img/arrow-right.svg" width="17" heigh="17">
+            <a href="">Brandon tiles</a>
+            <img src="img/arrow-right.svg" width="17" heigh="17">
+            <a href="">Globe aged oak wood</a>
+        </div>
+        <div class="business-description">
+            <div class="row">
+                <div class="col col-no-gutter max-w-300">
+                    <img src="img/products/product-logged-in1.png">
+                    <div class="row">
+                        <div class="col col-no-gutter"><button class="button button--edit m-t-20">Edit</button></div>
+                        <div class="col col-no-gutter"><button class="button button--add m-t-20 m-l-10">New ad</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Bandon Tiles & Bathrooms Ltd</h3>
+                    <a href="">ads.ie/BandonTiles</a>
+                    <p>Ad astra per aspera. Carpe vinum. Acta non verba. Audentes fortuna iuvat. Aut viam inveniam aut
+                        faciam. Ad astra per aspera. Carpe vinum. Acta non verba. Audentes fortuna iuvat. Aut viam
+                        inveniam aut faciam.</p>
+                    <ul>
+                        <li><img src="img/phone.svg"><span>(316) 555-0116</span></li>
+                        <li><img src="img/clock.svg"><span>Weekdays: 09:00 - 17:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="row m-b-60">
+                <div class="col col-no-gutter">
+                    <div id="product-details-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="img/products/product-details-slide.png" width="370">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/products/product-details-slide.png" width="370">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="img/products/product-details-slide.png" width="370">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-no-gutter">
+                    <h3>Globe Aged Oak Wood Effect Rectified Tiles</h3>
+                    <h3>$35.5</h3>
+                    <button class="button button--phone">Phone</button>
+                    <button class="button button--email">Email</button>
+                </div>
+            </div>
+            <div class="row center-xs m-b-40">
+                <div class="col product-details-tab active-tab">Description</div>
+                <div class="col product-details-tab">Characteristics</div>
+            </div>
+            <p>Wood flooring is a beautiful classic which has been a favourite for years, but real wood can fade in sunlight, and it needs lots of maintenance or you could end up with splinters and broken boards. The Globe Aged Oak tile has a pre-distressed finish that mimics real wood perfectly, giving your home that traditional cosy appearance without any of the cost. The oak colour has undertones of brown and grey, making it a stunning addition to any room. Unlike real wood, these porcelain tiles can be laid in anywhere in the house, even the bathroom, and thanks to their R9 slip rating they’re well suited to areas of high traffic. The Globe range can be placed on both the floor and wall helping you create a beautifully seamless space.</p>
+            <p>We recommend these tiles are laid in a 1/3 broken bond pattern to avoid lipping, for more information see our guide here. While we do our best to use images that accurately represent our tiles, images on our website are to be used as a guide only. We always recommend ordering a sample to check you are happy with the colour and patterning of the tile.</p>
+        </div>
+    </div>
+    <footer class="footer m-t-100">
+        <div class="wrapper">
+            <div class="row between-sm middle-xs center-xs">
+                <div class="col-md p-15">
+                    Copyright 2019 Ads.ie
+                </div>
+                <div class="col-md">
+                    <ul class="nav-bar">
+                        <li>About</li>
+                        <li>Terms of use</li>
+                        <li>Privacy policy</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#product-details-slider', {
+                pagination: false,
+                width: '370px',
+                fixedWidth: '370px'
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>
