@@ -10,14 +10,14 @@
     bottom: 0px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
     .footer {
-        position: fixed;
+        font-size: 12px;
     }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 800px) {
     .footer {
-        position: relative;
+        font-size: $font-size;
     }
 }

@@ -22,10 +22,22 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .nav-bar {
+        text-align: center;
+        font-size: 12px;
         li {
-            display: block;
+            margin: 10px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .nav-bar {
+        text-align: end;
+        font-size: $font-size;
+        li {
+            margin: 15px;
         }
     }
 }

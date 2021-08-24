@@ -52,3 +52,17 @@
     width: 100%;
     text-align: left;
 }
+
+@media (max-width: 767px) {
+    .login {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 800px) {
+    .login {
+        width: 670px;
+        padding: 55px 85px 40px 85px;
+    }
+}

@@ -43,10 +43,11 @@
         width: 120px;
         font-size: 14px;
         padding: 25px 0px 10px 60px;
+        display: flex;
 
         &::before {
             padding-right: 5px;
-            content: "\2190";
+            content: url("../img/arrow-back.svg");
         }
     }
 
