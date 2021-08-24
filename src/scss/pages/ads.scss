@@ -76,3 +76,40 @@
         width: 168px;
     }
 }
+
+@media (max-width: 767px) {
+    .filters-bar  {
+        .select-category {
+            width: 150px;
+        }
+        input {
+            display: block;
+            margin-top: 30px;
+            width: 200px;
+        }
+        .search-button {
+            display: inline-block;
+        }
+    }
+    .recent-business-logo {
+        width: 100px;
+    }
+}
+
+@media (min-width: 800px) {
+    .filters-bar  {
+        .select-category {
+            width: 218px;
+        }
+        input {
+            display: table-cell;
+            width: 530px;
+        }
+        .search-button {
+            display: table-cell;
+        }
+    }
+    .recent-business-logo {
+        width: 200px;
+    }
+}

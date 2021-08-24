@@ -9,7 +9,9 @@
     }
 
     &--header {
+        text-align: end;
         li {
+            display: inline;
             margin: 0px;
             margin-right: 30px;
             &:hover {
@@ -29,6 +31,15 @@
         li {
             margin: 10px;
         }
+        &--header {
+            text-align: start;
+            li {
+                display: block;
+                margin: 0px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -38,6 +49,14 @@
         font-size: $font-size;
         li {
             margin: 15px;
+        }
+        &--header {
+            text-align: end;
+            li {
+                display: inline;
+                margin: 0px;
+                margin-right: 30px;
+            }
         }
     }
 }
