@@ -10,11 +10,11 @@
     margin-top: 50px;
     margin-bottom: 70px;
     height: 40px;
-    display: table;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
     .select-category {
         height: 40px;
-        display: table-cell;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -32,9 +32,9 @@
         background-position-y: 18px;
     }
     input {
-        display: table-cell;
         border: none;
         outline: 0px;
+        display: block;
         padding-left: 50px;
         height: 40px;
         position: relative;
@@ -47,9 +47,9 @@
         background-color: $cWhite;
     }
     .search-button {
-        display: table-cell;
         height: 40px;
         width: 40px;
+        display: block;
         background-color: $cRed;
         border: none;
         cursor: pointer;
@@ -79,16 +79,13 @@
 
 @media (max-width: 767px) {
     .filters-bar  {
+        margin-bottom: 100px;
         .select-category {
             width: 150px;
         }
         input {
-            display: block;
             margin-top: 30px;
             width: 200px;
-        }
-        .search-button {
-            display: inline-block;
         }
     }
     .recent-business-logo {
@@ -98,15 +95,12 @@
 
 @media (min-width: 800px) {
     .filters-bar  {
+        margin-bottom: 70px;
         .select-category {
             width: 218px;
         }
         input {
-            display: table-cell;
             width: 530px;
-        }
-        .search-button {
-            display: table-cell;
         }
     }
     .recent-business-logo {
