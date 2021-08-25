@@ -96,23 +96,6 @@
         }
     }
 
-    &--sorting {
-        background: url("../img/sorting.svg");
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 12px;
-        background-color: $cWhite;
-        color: $cDarkGrey;
-        width: 170px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 40px;
-        text-align: left;
-        padding-left: 18px;
-        padding-right: 11px;
-    }
-
     &--logged-in {
         background: url("../img/user.svg");
         background-repeat: no-repeat;

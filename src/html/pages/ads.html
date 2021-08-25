@@ -12,7 +12,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header relative">
             <div class="row between-xs middle-xs header-height">
                 <div class="col-md col-no-gutter">
                     <h2 class="logo">
@@ -20,7 +20,8 @@
                     </h2>
                 </div>
                 <div class="col-md col-no-gutter">
-                    <ul class="nav-bar nav-bar--header">
+                    <img src="img/menu-icon.svg" class="visible-mobile hidden-desktop" width="30px" height="30px">
+                    <ul class="nav-bar nav-bar--header visible-desktop hidden-mobile">
                         <li>All Businesses</li>
                         <li>Log In</li>
                         <li>Create Account</li>
@@ -28,6 +29,12 @@
                     </ul>
                 </div>
             </div>
+            <ul class="nav-bar nav-bar--mobile hidden">
+                <li>All Businesses</li>
+                <li>Log In</li>
+                <li>Create Account</li>
+                <li class="no-margin"><button class="button button--place-ad">Place an Ad</button></li>
+            </ul>
         </header>
         <h1 class="heading-ads">Search and find</h1>
         <h3>your perfect ad</h3>
@@ -37,7 +44,19 @@
             </select>
             <input type="text" name="search" placeholder="Search">
             <button class="search-button"><img src="img/search-white.svg"></button>
-            <button class="button button--sorting">Sort by</button>
+            <button class="sorting-button">Sort by</button>
+        </div>
+        <div class="filters-bar filters-bar--mobile">
+            <div class="row">
+                <input type="text" name="search" placeholder="Search">
+                <button class="search-button"><img src="img/search-white.svg"></button>
+            </div>
+            <div class="row between-xs">
+                <select class="select-category">
+                    <option value="" disabled selected>Browse by category</option>
+                </select>
+                <button class="sorting-button">Sort by</button>
+            </div>
         </div>
         <h3 class="p-l-20 m-b-40 fw-medium">Latest ads</h3>
         <div id="splide-latest-products" class="splide hidden-mobile visible-desktop">

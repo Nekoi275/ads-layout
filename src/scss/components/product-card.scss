@@ -112,7 +112,6 @@
 @media (max-width: 767px) {
     .product-card {
         width: 100%;
-        text-align: center;
         &--horizontal {
             height: 100%;
             img {
@@ -120,6 +119,39 @@
             }
             .col-product-descr {
                 margin-left: 0px;
+            }
+            .product-card-buttons {
+                margin: 0px;
+                width: 30px;
+                padding: 0px;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: $cRed;
+                cursor: pointer;
+    
+                li {
+                    display: flex;
+                    justify-content: end;
+                    margin-bottom: 10px;
+    
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        margin: 0px;
+                    }
+    
+                    span {
+                        display: none;
+                        padding-right: 5px;
+                    }
+    
+                    &:hover {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

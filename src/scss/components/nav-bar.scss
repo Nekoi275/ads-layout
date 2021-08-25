@@ -22,6 +22,25 @@
             margin: 0px;
         }
     }
+
+    &--mobile {
+        text-align: left;
+        position: absolute;
+        top: 55px;
+        display: block;
+        background-color: $cWhite;
+        border-radius: $borderRadius;
+        right: 0px;
+        padding: 10px;
+        width: 200px;
+        li {
+            display: block;
+            margin: 20px;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 767px) {
